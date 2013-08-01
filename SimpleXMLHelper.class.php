@@ -44,7 +44,7 @@ class SimpleXMLHelper {
         if ($attributes) {
           $data = array(
               'attributes' => array(),
-              'value' => (count($node) > 0) ? SimpleXMLHelper::xmlarray($node, $ns, FALSE) : (string) Helper::xmlarray($node)
+              'value' => (count($node) > 0) ? SimpleXMLHelper::xmlarray($node, $ns, FALSE) : (string) SimpleXMLHelper::xmlarray($node)
           );
 
           // Add the attributes as key-value pairs.
